@@ -71,6 +71,13 @@ footer {
   transition: all 0.5s ease-in-out;
 }
 
+.navItem.active {
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .navItem:hover {
   background-color: var(--white);
   color: var(--primary);
@@ -82,6 +89,11 @@ footer {
   background-color: transparent;
   border: none;
   display: none;
+  cursor: pointer;
+}
+
+.navMenuBtn i {
+  font-size: 50px;
 }
 
 /* End of Navbar & Footer */
@@ -286,4 +298,25 @@ header {
 
 /* End of Discussion Section & Work Process Section */
 
-/* Footer */
+@media (max-width: 750px) {
+  .navMenuBtn {
+    display: flex;
+  }
+
+  .navList {
+    height: 0;
+    width: 50vw;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    background-color: var(--primary);
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+  }
+
+  .navList.active{
+    height: 80vh;
+  }
+}
