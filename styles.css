@@ -520,7 +520,7 @@ header {
 @media (max-width: 650px) {
   .nav,
   footer {
-    height: 10vh;
+    height: 12vh;
   }
 
   header {
@@ -547,12 +547,13 @@ header {
     height: 0;
     width: 70vw;
     position: absolute;
-    top: 100px;
+    top: 70px;
     right: 0;
     background-color: var(--primary);
     flex-direction: column;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
+    align-items: center;
   }
 
   .navList.active {
